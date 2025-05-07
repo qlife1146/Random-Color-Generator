@@ -23,7 +23,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func resetColor(_ sender: UIButton) {
-        colorView.backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: 1)
+        colorView.backgroundColor = UIColor.white
         colorValueLabel.text = "R: 255, G: 255, B: 255"
         colorValueLabel.textColor = .black
     }
