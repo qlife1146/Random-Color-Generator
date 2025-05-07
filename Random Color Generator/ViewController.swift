@@ -24,7 +24,7 @@ class ViewController: UIViewController {
 
     @IBAction func resetColor(_ sender: UIButton) {
         colorView.backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: 1)
-        colorValueLabel.text = "255, 255, 255"
+        colorValueLabel.text = "R: 255, G: 255, B: 255"
         colorValueLabel.textColor = .black
     }
 
@@ -38,7 +38,7 @@ class ViewController: UIViewController {
     func changeColor() {
         // 백그라운드 컬러 변경
         colorView.backgroundColor = UIColor(red: r, green: g, blue: b, alpha: 1)
-        colorValueLabel.text = "\(floatToInt(r)), \(floatToInt(g)), \(floatToInt(b))"
+        colorValueLabel.text = "R: \(floatToInt(r)), G: \(floatToInt(g)), B: \(floatToInt(b))"
 
         // 백그라운드 컬러의 명조에 맞춰 텍스트 컬러 흑백 전환
         let backColorLuminance = relativeLuminance(r: r, g: g, b: b)
